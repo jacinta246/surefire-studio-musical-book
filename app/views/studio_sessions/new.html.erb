@@ -1,0 +1,20 @@
+<h1><p>BOOK A SESSION 🎵</p> </h1>
+<%= form_with model: @studio_session do |person_form| %>
+  <%= person_form.select(:music_engineer_id, [['Velda Larkin Jr.', 1], ['Jerrie Fahey', 2], ['Fr. Demetria Lowe', 3],['Joann Franecki',4]]
+<% end %>
+<%= f.label :date%>
+(ex. 1/1/2020) <%=f.text_field :date %>
+<br>
+<br>
+<%= f.label :session_type%>
+<%= f.text_field :session_type %>
+<br>
+<br>
+<%= f.label :session_duration%>
+<%= f.text_field :session_duration%>
+<br>
+<br>
+<%=f.submit "BOOK MY SESSION"%>
+<br>
+<br>
+<% end %>

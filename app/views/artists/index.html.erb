@@ -1,0 +1,12 @@
+<h1><p> Welcome to the artist page</h1></p>
+ 
+ <h2><p> Here are all your registered artists: </p>
+
+ <%@artists.each do |artist|%> <%# goes though every artist %>
+       <li><%=link_to artist.name, "/artists/#{artist.id}" %></li> 
+<% end%>
+
+
+
+
+

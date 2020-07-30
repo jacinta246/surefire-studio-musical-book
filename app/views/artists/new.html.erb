@@ -1,0 +1,15 @@
+<h1>Create a new Artist</h1>
+
+<%= form_with model: @artist do |f| %>
+<%= f.label :name%>
+<%=f.text_field :name %>
+<br>
+<br>
+<%= f.label :type_of_artist%>
+<%=f.text_field :type_of_artist %>
+<br>
+<br>
+<%=f.submit "Create a new artist"%>
+<br>
+<br>
+<% end %>
